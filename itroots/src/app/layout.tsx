@@ -85,12 +85,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <meta name="theme-color" content="#0881ec" />
       </head>
-      <body className={`${outfit.variable} ${inter.variable}`}>
+      <body className={`${outfit.variable} ${inter.variable}`} suppressHydrationWarning>
         <MainLayout>{children}</MainLayout>
       </body>
     </html>
